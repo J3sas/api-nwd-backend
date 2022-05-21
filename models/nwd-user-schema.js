@@ -3,7 +3,7 @@
 
 
     const userSchema = new Schema({
-        namee : {
+        name : {
             type : String,
             required : true
         },
