@@ -5,10 +5,16 @@ const User = require("../models/nwd-user-schema")
 const jwt = require('jsonwebtoken')
 
 
+router.get('/test',(req,res)=>{
+    res.json({mess : 'Hello Mitchel'})
+})
+
 
 router.get('/:id',getUserId,(req,res)=>{
     res.json(res.user)
 })
+
+
 
 
 router.get('/info',authenticateToken,(req,res)=>{
