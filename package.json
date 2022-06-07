@@ -92,7 +92,7 @@
   },
   "keywords": [],
   "engines": {
-    "node": "14.x"
+    "node": "14.18.0"
   },
   "author": "",
   "license": "ISC"

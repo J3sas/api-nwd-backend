@@ -22,7 +22,7 @@ io.on('connection',socket => {
 
 //conneting to DB via ENV
 mongoose.connect(process.env.DATABASE_URL_CHILLDB)
-.then(()=> app.listen(4000,()=>console.log("up and running *4000")),
+.then(()=> app.listen(process.env.PORT || 4000,()=>console.log("up and running *4000")),
 e=>console.log(`error`,e))
 
 const app = express();
